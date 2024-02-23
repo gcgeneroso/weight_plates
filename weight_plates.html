@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <title>Weight Plates</title>
+  </head>
+  <body>
+    <main>
+      <h1>Weight Plates</h1>
+      <div class="container">
+        <form id="plates-calculator">
+          <label for="total-weight">Total weight: </label>
+          <input
+            type="number"
+            min="0"
+            id="total-weight"
+            placeholder="0"
+          />
+          <fieldset id="forty-fives">
+            <legend>45</legend>
+            <div class="input-container"><input type="number" value="6" id="forty-fives-input"></div>
+          </fieldset>
+          <fieldset id="thirty-fives">
+            <legend>35</legend>
+            <div class="input-container"><input type="number" value="2" id="thirty-fives-input"></div>
+          </fieldset>
+          <fieldset id="twenty-fives">
+            <legend>25</legend>
+            <div class="input-container"><input type="number" value="4" id="twenty-fives-input"></div>
+          </fieldset>
+          <fieldset id="tens">
+            <legend>10</legend>
+            <div class="input-container"><input type="number" value="4" id="tens-input"></div>
+          </fieldset>
+          <fieldset id="fives">
+            <legend>5</legend>
+            <div class="input-container"><input type="number" value="4" id="fives-input"></div>
+          </fieldset>
+          <fieldset id="two-point-fives">
+            <legend>2.5</legend>
+            <div class="input-container"><input type="number" value="2" id="two-point-fives-input"></div>
+          </fieldset>
+          <div>
+            <button type="submit" id="calculate-plates">
+              Determine Plates
+            </button>
+            <button type="button" id="clear">Clear</button>
+          </div>
+        </form>
+        <div id="output" class="output" hidden>
+          <table id="plates-table"><tr><th>Weight</th><th>Amount</th></tr></table>
+          <div id="remaining-weight"></div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
