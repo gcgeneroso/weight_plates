@@ -33,7 +33,7 @@ function calculate_plates(e) {
         if (!('45' in plates_used)){
             plates_used['45'] = 0;
         }
-        plates_used['45'] += 2
+        plates_used['45'] += 1
         forty_fives -= 2
         minus_barbell -= 90
     }
@@ -41,7 +41,7 @@ function calculate_plates(e) {
         if (!('35' in plates_used)){
             plates_used['35'] = 0;
         }
-        plates_used['35'] += 2
+        plates_used['35'] += 1
         thirty_fives -= 2
         minus_barbell -= 70
     }
@@ -49,7 +49,7 @@ function calculate_plates(e) {
         if (!('25' in plates_used)){
             plates_used['25'] = 0;
         }
-        plates_used['25'] += 2
+        plates_used['25'] += 1
         twenty_fives -= 2
         minus_barbell -= 50
     }
@@ -57,7 +57,7 @@ function calculate_plates(e) {
         if (!('10' in plates_used)){
             plates_used['10'] = 0;
         }
-        plates_used['10'] += 2
+        plates_used['10'] += 1
         tenz -= 2
         minus_barbell -= 20
     }
@@ -65,7 +65,7 @@ function calculate_plates(e) {
         if (!('5' in plates_used)){
             plates_used['5'] = 0;
         }
-        plates_used['5'] += 2
+        plates_used['5'] += 1
         fivez -= 2
         minus_barbell -= 10
     }
@@ -73,7 +73,7 @@ function calculate_plates(e) {
         if (!('2.5' in plates_used)){
             plates_used['2.5'] = 0;
         }
-        plates_used['2.5'] += 2
+        plates_used['2.5'] += 1
         two_point_fives -= 2
         minus_barbell -= 5
     }
@@ -107,5 +107,6 @@ function clear_table(e) {
     output.innerHTML = outputOriginal
 }
 
+calculatePlatesButton.addEventListener("click", clear_table)
 calculatePlatesButton.addEventListener("click", calculate_plates)
 clearButton.addEventListener("click", clear_table)
